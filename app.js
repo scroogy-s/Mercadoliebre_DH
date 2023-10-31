@@ -9,6 +9,10 @@ app.get('/',(req,res) => {
     res.sendFile(path.join(__dirname, 'views/home.html'))
 });
 
+app.get('/register',(req,res) => {
+    res.sendFile(path.join(__dirname, 'views/register.html'))
+});
+
 const port = 3000
 app.listen(port , () => {
     console.log(`Servidor levantado. Escuchando en http://localhost:${port}`)
