@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -42,36 +42,10 @@
         </div>
     </header>
     <main>
-        <form action="register.html" class="contenedor_formulario">
-            <input type="text" placeholder="Nombre y Apellido">
+        <form action="login.html" class="contenedor_formulario">
             <input type="text" placeholder="Nombre de Usuario">
-            <input type="email" placeholder="E-Mail">
-            <label>Fecha de Nacimiento</label>
-            <input type="date">
-            <input type="text" placeholder="Domicilio">
-            <label>Perfil del Usuario</label>
-            <label for="comprador"><input type="radio" name="perfil_usuario" value="Comprador" id="comprador">Comprador</label>
-            
-            <label for="vendedor"><input type="radio" name="perfil_usuario" value="Vendedor" id="vendedor">Vendedor</label>
-            <label>Intereses</label>
-            
-            <label for="electro"><input type="checkbox" name="categorias" value="electro" id="electro">Electro</label>
-            
-            <label for="moda"><input type="checkbox" name="categorias" value="moda" id="moda">Moda</label>
-            
-            <label for="hogar"><input type="checkbox" name="categorias" value="hogar" id="hogar">Hogar</label>
-            
-            <label for="jugueteria"><input type="checkbox" name="categorias" value="jugueteria" id="jugueteria">Jugueteria</label>
-            
-            <label for="vidasana"><input type="checkbox" name="categorias" value="vida_sana" id="vidasana">Vida sana</label>
-            <label>Foto de Usuario</label>
-            <input type="file" name="avatar" accept=".jpg" multiple>
-            <input type="password" placeholder="Contrasena">
-            <input type="password" placeholder="Confirmar contrasena">
-            <div class="botones_form">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </div>
+            <input type="password" placeholder="Elegi tu contrasena">
+            <button type="submit">Enviar</button>
         </form>
     </main>
     <footer>

@@ -1,0 +1,18 @@
+.contenedor_formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px;
+    margin: auto;
+}
+
+.contenedor_formulario input, label{
+    padding: 5px;
+    margin: 5px;
+}
+
+.botones_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}

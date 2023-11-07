@@ -49,11 +49,22 @@ header {
     width: 50%;
 }
 
-.searchbar {
+.searchbar{
     width: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.searchbar input{
+    padding: 7px;
+    border: none;
+}
+
+.searchbar button{
+    background-color: white;
+    padding: 7px;
+    border: none;
 }
 
 .caja_superior {
@@ -101,6 +112,10 @@ footer article i {
 
 .contenedor_logo_searchbar{
     display: flex;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 768px) {
