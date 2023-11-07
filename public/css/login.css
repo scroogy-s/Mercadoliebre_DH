@@ -24,3 +24,7 @@
     border-radius: 5px;
     color: white;
 }
+
+.contenedor_formulario button:hover{
+    background-color: #0022AA;
+}
