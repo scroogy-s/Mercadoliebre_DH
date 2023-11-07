@@ -14,59 +14,56 @@
 <body>
     <header>
         <div class="caja_superior">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo de la pagina" class="logo">
-            <div class="searchbar">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="contenedor_logo_searchbar">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de la pagina" class="logo">
+                <div class="searchbar">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
             </div>
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <nav class="navbar">
-            <ul>
+        <div class="caja_barras">
+            <ul class="navbar_items">
                 <li>Ofertas</li>
                 <li>Tiendas Oficiales</li>
                 <li>Vender</li>
                 <li>Ayuda</li>
             </ul>
-        </nav>
-        <nav class="loginbar">
-            <ul>
-                <li>Creá tu cuenta<i class="fa-solid fa-id-card"></i></li>
-                <li>Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></li>
-                <li>Mis Compras<i class="fa-solid fa-basket-shopping"></i></li>
+            <ul class="loginbar_items">
+                <li>Creá tu cuenta <i class="fa-solid fa-id-card"></i></li>
+                <li>Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li>Mis Compras <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
-        </nav>
+        </div>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
     </header>
     <main>
-        <form action="register.html">
-            <label>Nombre y Apellido</label>
-            <input type="text">
-            <label>Nombre de usuario</label>
-            <input type="text">
-            <label>Email</label>
-            <input type="email">
+        <form action="register.html" class="contenedor_formulario">
+            <input type="text" placeholder="Nombre y Apellido">
+            <input type="text" placeholder="Nombre de Usuario">
+            <input type="email" placeholder="E-Mail">
             <label>Fecha de Nacimiento</label>
             <input type="date">
-            <label>Domicilio</label>
-            <input type="text">
+            <input type="text" placeholder="Domicilio">
             <label>Perfil del Usuario</label>
-            <label>Comprador</label>
             <input type="radio" name="perfil_usuario" value="Comprador">
-            <label>Vendedor</label>
+            <label>Comprador</label>
             <input type="radio" name="perfil_usuario" value="Vendedor">
+            <label>Vendedor</label>
             <label>Intereses</label>
+            <input type="checkbox" name="categorias" value="electro">
             <label>Electro</label>
-            <input type="checkbox" name="categorias" value="Vendedor">
-            <select name="categorias" >
-                <option value="electro">Electro</option>
-                <option value="moda">Moda</option>
-                <option value="hogar">Hogar</option>
-                <option value="jugueteria">Juguetería</option>
-                <option value="vida-sana">Vida sana</option>
-            </select>
+            <input type="checkbox" name="categorias" value="moda">
+            <label>Moda</label>
+            <input type="checkbox" name="categorias" value="hogar">
+            <label>Hogar</label>
+            <input type="checkbox" name="categorias" value="jugueteria">
+            <label>Jugueteria</label>
+            <input type="checkbox" name="categorias" value="vida_sana">
+            <label>Vida sana</label>
         </form>
     </main>
     <footer>

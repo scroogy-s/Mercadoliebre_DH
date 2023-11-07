@@ -34,21 +34,6 @@ header {
     font-size: 24px;
 }
 
-.precios {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-    color: var(--verde);
-}
-
-.descripcion {
-    font-size: 16px;
-    display: none;
-}
-
-
 .burger-menu {
     margin: auto;
     border: dotted 2px var(--celeste);
@@ -74,7 +59,7 @@ header {
 .caja_superior {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -93,74 +78,32 @@ footer article i {
     margin-bottom: 10px;
 }
 
-.producto {
-    margin: 10px;
+.navbar_items {
+    list-style-type: none;
 }
 
-.producto:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
+.navbar_items li {
+    padding: 25px;
 }
 
-.producto:hover .descripcion{
-    display: block;
+.loginbar_items {
+    list-style-type: none;
 }
 
-.caja_producto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-}
-
-.producto_bot {
-    border-top: 1px solid var(--gris_claro);
+.loginbar_items li {
     padding: 15px;
-    background-color: white;
-    position: relative;
 }
 
-.producto_bot i {
-    color: var(--verde);
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--verde);
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    transition: transform 0.3s;
-}
-
-.producto_bot i:hover {
-    transform: rotate(-90deg);
-}
-
-
-.navbar,
-.loginbar {
+.navbar_items,
+.loginbar_items {
     display: none;
 }
 
-
+.contenedor_logo_searchbar{
+    display: flex;
+}
 
 @media (min-width: 768px) {
-    .producto {
-        /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
-        width: 45%;
-    }
-
-    .descripcion{
-        display: block;
-    }
 
     .navbar,
     .loginbar {
@@ -175,10 +118,20 @@ footer article i {
         flex-wrap: nowrap;
     }
 
-}
+    .caja_barras {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-@media (min-width: 1024px) {
-    .producto {
-        width: 22%;
+    .navbar_items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .loginbar_items {
+        display: flex;
     }
 }
+
+@media (min-width: 1024px) {}
